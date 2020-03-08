@@ -1,0 +1,17 @@
+{
+  "name": "footnotes",
+  "main": "./lib/footnotes",
+  "version": "0.0.0",
+  "description": "Enables reference footnotes and inline footnotes",
+  "keywords": [
+    "inkdrop",
+    "markdown",
+    "footnotes"
+  ],
+  "repository": "https://github.com/inkdropapp/inkdrop-footnotes",
+  "license": "MIT",
+  "engines": {
+    "inkdrop": "^4.x"
+  },
+  "dependencies": {}
+}
