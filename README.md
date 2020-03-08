@@ -23,4 +23,4 @@ And something else[^2].
 
 It produces:
 
-![example](docs/example.png)
+![example](./docs/example.png)
