@@ -1,7 +1,7 @@
 {
   "name": "footnotes",
   "main": "./lib/footnotes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Enables reference footnotes and inline footnotes",
   "keywords": [
     "inkdrop",
