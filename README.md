@@ -12,15 +12,31 @@ ipm install footnotes
 ## How to use
 
 ```markdown
-Something something[^or something?].
+Here is a footnote reference,[^1]
+another,[^longnote],
+and optionally there are inline
+notes.^[you can type them inline, which may be easier, since you don’t
+have to pick an identifier and move down to type the note.]
 
-And something else[^2].
+[^1]: Here is the footnote.
 
-[^2]: This reference footnote contains a paragraph...
+[^longnote]: Here’s one with multiple blocks.
 
-  - ...and a list
+    Subsequent paragraphs are indented to show that they
+belong to the previous footnote.
+
+        { some.code }
+
+    The whole paragraph can be indented, or just the first
+    line.  In this way, multi-paragraph footnotes work like
+    multi-paragraph list items.
+
+This paragraph won’t be part of the note, because it
+isn’t indented.
 ```
 
 It produces:
 
 ![example](./docs/example.png)
+
+Learn more about [the footnotes syntax](https://github.com/remarkjs/remark-footnotes#use).
