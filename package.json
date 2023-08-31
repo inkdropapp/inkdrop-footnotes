@@ -1,6 +1,6 @@
 {
   "name": "footnotes",
-  "main": "./lib/footnotes",
+  "main": "./lib/index.js",
   "version": "1.2.0",
   "description": "Enables reference footnotes and inline footnotes",
   "keywords": [
@@ -10,10 +10,21 @@
   ],
   "repository": "https://github.com/inkdropapp/inkdrop-footnotes",
   "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib && rollup -c --bundleConfigAsCjs",
+    "watch": "rollup -c --watch --bundleConfigAsCjs"
+  },
   "engines": {
     "inkdrop": "^5.x"
   },
-  "dependencies": {
-    "remark-footnotes": "^2.0.0"
+  "devDependencies": {
+    "remark-footnotes": "^4.0.1",
+    "@babel/core": "^7.22.9",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.0.0",
+    "rollup": "^3.26.3"
   }
 }

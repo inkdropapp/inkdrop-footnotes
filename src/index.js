@@ -1,5 +1,5 @@
-const { markdownRenderer } = require('inkdrop')
-const footnotes = require('remark-footnotes')
+import { markdownRenderer } from 'inkdrop'
+import footnotes from 'remark-footnotes'
 
 module.exports = {
   activate() {
@@ -15,4 +15,4 @@ module.exports = {
       if (i >= 0) remarkPlugins.splice(i, 1)
     }
   }
-};
+}
